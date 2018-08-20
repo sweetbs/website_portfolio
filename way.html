@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> 약꾹이네 </title>
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/default.css" />
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/ui.js"></script>
+    <style>
+        .imgContainer{
+            position: relative;
+            width: 535px;
+            height: 730px;
+            display: inline-block;
+        }
+        .imgContainer img{
+            position: absolute;
+            top: 20px;
+            display: inline;
+            
+        }
+    </style>
+        <style>
+   .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+       
+       
+
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    top: 20%;
+    margin: auto;
+    padding: 0;
+    width: 30%;
+
+}
+
+
+
+/* The Close Button */
+.close {
+    font-size: 28px;
+    font-weight: bold;position: absolute;
+    right: 130px;
+    z-index: 1;
+    top: 30px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-body {
+    position: relative;
+}
+          
+        .mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+            .prev{
+                left:40px;
+            }
+/* Position the "next button" to the right */
+.next {
+  right: 90px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+        
+        
+        
+</style>
+</head>
+<body class="index">
+
+	<!-- s: header -->
+	<header id="header_container">
+		<div class="header_inner">
+			<h1 class="logo"><a href="index.html"><img src="images/img_logo01.png" width="180" height="60" alt="약꾹이네" /></a></h1>
+			<nav class="gnb_wrap">
+				<ul>
+					<li><a href="intro.html" >약 소개</a></li>
+					<li><a href="way.html" class="on">복약방법</a></li>
+					<li><a href="care.html">주의사항</a></li>
+					<li><a href="test.html">랜선처방</a></li>
+				</ul>
+			</nav>
+			<div class="search_wrap">
+				<input type="text" />
+				<a href="#" class="btnSrh"><img src="images/btn_search01.png" width="21" height="26" alt="검색" /></a>
+			</div>
+		</div>
+	</header>
+	<!-- e: header -->
+
+	<!-- s: main -->
+	<div id="body_container" class="way_page">
+		<div class="body_inner">
+            <div class="header_wrap animated fadeInDown">
+				<img src="images/way/water.png" width="1700" height="650" alt="검색" />
+			</div>
+			<div class="content_wrap content01">
+				<div id = "inner request" class="inner request">
+                    <div class = "imgContainer">
+                    <img id = "w1" src = "images/way/w1.png" onmouseover="hover('w1');" onmouseout="unhover('w1');"
+                         onclick="openPopUp()">
+                        </div>
+                    <div class = "imgContainer">
+                    <img id = "w2" src = "images/way/w2.png"
+                         onmouseover="hover('w2');" onmouseout="unhover('w2');">
+                    </div>
+                    <div class = "imgContainer">
+                    <img id = "w3" src = "images/way/w3.png" 
+                         onmouseover="hover('w3');" onmouseout="unhover('w3');">
+                    </div>
+                    <div class = "imgContainer">
+                    <img id = "w4" src = "images/way/w4.png"
+                         onmouseover="hover('w4');" onmouseout="unhover('w4');">
+                    </div>
+                    <div class = "imgContainer">
+                    <img id = "w5" src = "images/way/w5.png"
+                         onmouseover="hover('w5');" onmouseout="unhover('w5');">
+                    </div>
+                    <div class = "imgContainer">
+                    <img id = "w6" src = "images/way/w6.png"
+                         onmouseover="hover('w6');" onmouseout="unhover('w6');">
+                    </div>
+                    <div class = "imgContainer">
+                    <img id = "w7" src = "images/way/w7.png"
+                         onmouseover="hover('w7');" onmouseout="unhover('w7');">
+                    </div>
+                    <div class = "imgContainer">
+                    <img id = "w8" src = "images/way/w8.png"
+                         onmouseover="hover('w8');" onmouseout="unhover('w8');">
+                    </div>
+                    <div class = "imgContainer">
+                    <img id = "w9" src = "images/way/w9.png"
+                         onmouseover="hover('w9');" onmouseout="unhover('w9');">
+					</div>
+                </div>
+                 <div id="myModal" class="modal" >
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-body">
+             <span class="close">&times;</span>
+            <div class="slideshow-container">
+
+<div class="mySlides">
+  <img id= "slide1" style="width:100%" src="images/way/st1.png">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides">
+  <img id= "slide2" style="width:100%" src="images/way/st2.png">
+  <div class="text"></div>
+</div>
+                
+                
+<div class="mySlides" >
+  <img id= "slide3" style="width:100%" src="images/way/st3.png">
+  <div class="text"></div>
+</div>
+                
+                
+<div class="mySlides" >
+  <img id= "slide4" style="width:100%" src="images/way/st4.png">
+  <div class="text"></div>
+</div>
+                
+                <div class="mySlides" >
+  <img id= "slide5" style="width:100%" src="images/way/st5.png">
+  <div class="text"></div>
+</div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+            
+            </div>
+        </div>
+           </div>
+            </div>
+        </div>
+    </div>
+    
+	<!-- e: main -->
+
+	<!-- s: footer -->
+	<footer id="footer_container">
+		<div class="bg line01"></div>
+		<div class="bg line02"></div>
+		<div class="footer_inner">
+			<img src="images/img_footer01.png" width="1700" height="364" />
+		</div>
+	</footer>
+	<!-- e: footer -->
+
+<script>
+    function hover(element) {
+        var el = document.getElementById(element);
+        var srcInfo = "images/way/" + element + "_h.png";
+        el.src = srcInfo;
+//        el.style.marginBottom="100px";
+        
+}
+
+function unhover(element) {
+    
+        var el = document.getElementById(element);
+    var srcInfo = "images/way/" + element + ".png";
+    el.src = srcInfo;
+//        el.style.marginBottom="0px";
+}
+    
+    
+var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("close")[0];
+
+var slide1 = document.getElementById("slide1");
+var slide2 = document.getElementById("slide2");
+var slide3 = document.getElementById("slide3");
+var slide4 = document.getElementById("slide4");
+var slide5 = document.getElementById("slide5");
+
+function openPopUp(){
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>
